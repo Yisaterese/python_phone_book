@@ -2,8 +2,9 @@
 import pytest
 from phone_book import *
 
-class test_phone_book:
+@pytest.fixtures
 
-    def test_save_contacts():
-        phone_contacts.save_contacts():
+def test_save_contacts():
+    phone_book.save_contacts()
+    assert
 
