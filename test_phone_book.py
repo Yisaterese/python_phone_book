@@ -6,5 +6,6 @@ from phone_book import *
 
 def test_save_contacts():
     phone_book.save_contacts()
-    assert
+
+
 
