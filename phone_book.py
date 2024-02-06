@@ -6,8 +6,9 @@ class phone_book:
         self.contacts_list = contacts_list
 
     def add_contacts(self,name,phone_number):
+
         for index in range (len(name)):
-            if len(phone_book) != 11:
+            if len(name) != 11:
                 return "Enter a valid number with eleven digits"
         contact = {"name":name,"phone_umber":phone_number}
         self.contacts_list.append(contact)
@@ -15,7 +16,7 @@ class phone_book:
     def search_contact(self,name):
         for contact in self.contacts_list:
            if contact["name"] == name:
-               return contact
+               return contact.get(name)
 
 
     def delete_contact(self,delete_contact):
