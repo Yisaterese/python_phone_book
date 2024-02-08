@@ -41,7 +41,6 @@ def test_can_search_for_contacts():
     phone_book.clear_contact_list()
     assert phone_book.size_of_contact_list() is 0
 
-
 def test_can_clear_all_contact_list():
     phone_book = PhoneBook()
 
