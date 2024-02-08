@@ -1,7 +1,5 @@
 class PhoneBook:
 
-
-
     def __init__(self, contacts_list=[]):
         self.contacts_list = contacts_list
 
