@@ -2,6 +2,7 @@
 from phone_book import PhoneBook
 
 
+
 def test_if_phone_book_can_add_contacts():
     phone_book = PhoneBook()
     assert phone_book.size_of_contact_list() is 0
