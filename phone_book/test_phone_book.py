@@ -15,7 +15,6 @@ def test_phone_book_is_empty_before_adding_contact():
     phone_book2 = PhoneBook()
     assert phone_book2.size_of_contact_list() is 0
 
-
 def test_contact_can_be_deleted():
 
     phone_book = PhoneBook()
