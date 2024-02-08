@@ -4,18 +4,15 @@ class PhoneBook:
 
     def __init__(self, contacts_list=[]):
         self.contacts_list = contacts_list
-        #self.list_of_contacts = len(self.contacts_list)
 
-    def add_contacts(self, name, phone_number):
+    def add_contact(self, name, phone_number):
         if len(phone_number) == 11 and phone_number.startswith("0"):
-            contact = {"name": name, "1phone_number": phone_number}
+            contact = {"name": name, "phone_number": phone_number}
             self.contacts_list.append(contact)
 
-    def length_of_contact_list(self):
-        if not self.contacts_list:
-            return 0
-        else:
-            return len(self.contacts_list)
+    def size_of_contact_list(self) :
+        return  len(self.contacts_list)
+
 
     def delete_contact(self, delete_name):
         for the_contacts in self.contacts_list:
